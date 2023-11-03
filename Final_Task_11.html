@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <link rel="stylesheet" href="./Final_Task11.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Tours">Tours</a></li>
+            <li><a href="#Explore">Explore</a></li>
+            <li><a href="#Events">About</a></li>
+            <li class="ctn"><a href="#contact"></a>Contact</li>
+        </ul>
+        <img src="./assets/images/icons8-menu-48.png" alt="" class="menu-btn">
+    </nav>
+    <header id="Home">
+        <div class="header-content">
+            <h2>
+                Explore The Colorfull World
+            </h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <!-- Events -->
+    <section class="events" id="Events">
+        <div class="title">
+            <h1>Upcomming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./assets/images/pexels-s-migaj-885880.jpg" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae in repellendus consequuntur eveniet molestiae, dicta provident accusamus, nostrum blanditiis quam quidem, voluptatibus similique dolorum quae? Voluptate corporis quaerat enim suscipit?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./assets/images/pexels-gantas-vaičiulėnas-1891882.jpg" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae in repellendus consequuntur eveniet molestiae, dicta provident accusamus, nostrum blanditiis quam quidem, voluptatibus similique dolorum quae? Voluptate corporis quaerat enim suscipit?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore" id="Explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil repudiandae quasi nulla. Veniam corporis nostrum quam laborum repudiandae fugit inventore cum beatae consectetur qui dignissimos, delectus voluptates quo assumenda.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section class="tours" id="Tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMMING TOURS AND DESTINATIONS</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur, voluptates reprehenderit perspiciatis aut repellendus, atque iste doloremque, ea itaque libero ipsum vero quaerat culpa nemo quas quia aperiam repellat.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./assets/images/Tours/pexels-fayson-merege-5784092 (5).jpg" alt="">
+                    <img src="./assets/images/Tours/pexels-paige-deasley-9789940.jpg" alt="">
+                    <img src="./assets/images/Tours/pexels-rachel-claire-5865415.jpg" alt="">
+                    <img src="./assets/images/Tours/pexels-trace-hudson-2379864.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div id="content" >
+            <h1>Contact Us</h1>
+            <p>Have a Question or  feedback? Send us a Message:</p>
+            <form id="contactform" >
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea type="text" id="message" rows="4" required></textarea>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <p>&copy; Copy Rights By Ramprasad Boddu || Email: ramprasadboddu8897@gmail.com</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="copyRights.html">CopyRights</a></p>
+    </section>
+    <script>
+        const menuBtn= document.querySelector('.menu-btn');
+        const navlinks=document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
